@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/budget"
+        android:icon="@drawable/ic_budget"
+        android:title="@string/budget" />
+
+    <item
+        android:id="@+id/debt"
+        android:icon="@drawable/ic_debts"
+        android:title="@string/debt" />
+
+    <item
+        android:id="@+id/alarm"
+        android:icon="@drawable/ic_alarm"
+        android:title="@string/alarm"/>
+
+    <item
+        android:id="@+id/backup"
+        android:icon="@drawable/ic_backup"
+        android:title="@string/backup"/>
+
+    <group
+        android:id="@+id/group">
+
+        <item
+            android:id="@+id/subscription"
+            android:icon="@drawable/ic_diamond"
+            android:title="@string/vip_version" />
+
+        <item
+            android:id="@+id/theme"
+            android:icon="@drawable/ic_theme"
+            android:title="@string/theme" />
+
+        <item
+            android:id="@+id/language"
+            android:icon="@drawable/ic_language"
+            android:title="@string/language" />
+
+
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/exit" />
+
+    </group>
+
+
+</menu>

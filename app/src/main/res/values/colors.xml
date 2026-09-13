@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--light theme =>   -->
+    <color name="colorPrimary">#F65827</color>
+    <color name="colorPrimaryContainer">#FF8059</color>
+    <color name="colorSecondary">#243FD8</color>
+    <color name="colorSecondaryContainer">#5D75F8</color>
+
+    <!--dark theme =>   -->
+    <color name="colorPrimaryDark">#BA3207</color>
+    <color name="colorPrimaryContainerDark">#B15032</color>
+    <color name="colorSecondaryDark">#13258E</color>
+    <color name="colorSecondaryContainerDark">#34428E</color>
+
+    <color name="green">#00C853</color>
+    <color name="red">#D50000</color>
+    <color name="textColorRed">#F13232</color>
+    <color name="textColorGreen">#31E47B</color>
+
+    <color name="gray">#959595</color>
+    <color name="gray2">#595959</color>
+    <color name="gray_light">#EAEAEA</color>
+    <color name="gray_dark">#FF424242</color>
+
+    <!--Other colors =>   -->
+    <color name="blue1">#00B8D4</color>
+    <color name="blue2">#0091EA</color>
+    <color name="blue3">#2962FF</color>
+    <color name="blue4">#304FFE</color>
+    <color name="purple1">#6200EA</color>
+    <color name="purple2">#AA00FF</color>
+    <color name="purple3">#C51162</color>
+    <color name="orange1">#DD2C00</color>
+    <color name="orange2">#FF6D00</color>
+    <color name="yellow1">#FFAB00</color>
+    <color name="yellow2">#FFD600</color>
+    <color name="yellowAndGreen">#AEEA00</color>
+    <color name="green1">#64DD17</color>
+    <color name="green2">#00C853</color>
+    <color name="greenAndBlue">#00BFA5</color>
+
+    <color name="bottomNavigationColor" tools:ignore="ReferenceType">@drawable/bottom_navigation_text_color</color>
+</resources>
+

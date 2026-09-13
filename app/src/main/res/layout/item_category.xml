@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp">
+
+    <View
+        android:id="@+id/viewTypeColor"
+        android:layout_width="6dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:paddingBottom="8dp">
+
+
+        <ImageView
+            android:id="@+id/btnDelete"
+            style="@style/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageIcon"
+            app:srcCompat="@drawable/ic_delete" />
+
+
+        <ImageView
+            android:id="@+id/imgExpandShrink"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_shrink"
+            app:layout_constraintBottom_toBottomOf="@+id/btnDelete"
+            app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+            app:layout_constraintTop_toTopOf="@+id/btnDelete" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="end"
+            android:singleLine="true"
+            android:text="Food"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageIcon"
+            app:layout_constraintStart_toEndOf="@+id/imageIcon"
+            app:layout_constraintTop_toTopOf="@+id/imageIcon" />
+
+        <TextView
+            android:id="@+id/txtTotalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="1.400.000"
+            android:textColor="@color/textColorGreen"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView24"
+            app:layout_constraintEnd_toStartOf="@+id/textView24"
+            app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/toman"
+            app:layout_constraintBottom_toBottomOf="@+id/imgExpandShrink"
+            app:layout_constraintEnd_toStartOf="@+id/imgExpandShrink"
+            app:layout_constraintTop_toTopOf="@+id/imgExpandShrink" />
+
+        <TextView
+            android:id="@+id/txtTransactionsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="16 Transaction"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/imageIcon"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+        <TextView
+            android:id="@+id/txtIncomesCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="3 درآمد"
+            android:textColor="@color/textColorGreen"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txtTransactionsCount"
+            app:layout_constraintTop_toBottomOf="@+id/txtTransactionsCount" />
+
+        <TextView
+            android:id="@+id/txtIncomeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="2,000,000 تومان"
+            android:textColor="@color/textColorGreen"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txtIncomesCount"
+            app:layout_constraintTop_toTopOf="@+id/txtIncomesCount" />
+
+        <TextView
+            android:id="@+id/txtExpenseValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="600,000 تومان"
+            android:textColor="@color/textColorRed"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txtExpensesCount"
+            app:layout_constraintTop_toTopOf="@+id/txtExpensesCount" />
+
+        <TextView
+            android:id="@+id/txtIncomePrecent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="80%"
+            android:textColor="@color/textColorGreen"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtIncomeValue"
+            app:layout_constraintStart_toEndOf="@+id/txtIncomeValue"
+            app:layout_constraintTop_toTopOf="@+id/txtIncomeValue" />
+
+        <TextView
+            android:id="@+id/txtExpensesPrecent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="20%"
+            android:textColor="@color/textColorRed"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtExpenseValue"
+            app:layout_constraintStart_toEndOf="@+id/txtExpenseValue"
+            app:layout_constraintTop_toTopOf="@+id/txtExpenseValue" />
+
+        <TextView
+            android:id="@+id/txtExpensesCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="13 هزینه"
+            android:textColor="@color/textColorRed"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txtIncomesCount"
+            app:layout_constraintTop_toBottomOf="@+id/txtIncomesCount" />
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bat" />
+
+        <include
+            android:id="@+id/includeCardSee"
+            layout="@layout/button_see_transactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/txtExpenseValue"
+            app:layout_constraintEnd_toEndOf="@+id/btnDelete"
+            app:layout_constraintTop_toTopOf="@+id/txtTransactionsCount" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

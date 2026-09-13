@@ -1,0 +1,110 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SelfAccounting" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryContainer">@color/colorPrimaryContainerDark</item>
+        <item name="colorSecondary">@color/colorSecondaryDark</item>
+        <item name="colorSecondaryContainer">@color/colorSecondaryContainerDark</item>
+
+        <item name="android:textColor">@color/white</item>
+
+        <item name="fontFamily">@font/font</item>
+
+    </style>
+
+    <style name="backgroundColor">
+        <item name="android:background">#2C2C2C</item>
+    </style>
+
+    <style name="imageButton" parent="Widget.AppCompat.ImageButton">
+        <item name="tint">@color/white</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="Widget.Material3.Toolbar">
+        <item name="android:gravity">center|start</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="Theme.SelfAccounting">
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="Theme.SelfAccounting" parent="Base.Theme.SelfAccounting" />
+
+    <style name="navigationStyle" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/colorPrimaryContainerDark</item>
+    </style>
+
+    <style name="navigationBottom" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="editText" parent="Widget.AppCompat.EditText">
+        <item name="android:backgroundTint">@color/gray</item>
+        <item name="hintTextColor">@color/gray_light</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="radioTheme" parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="android:textColor">@drawable/text_color_selector_night</item>
+        <item name="android:background">@drawable/range_radio_btn_selector_background_night</item>
+    </style>
+
+    <style name="radioTheme2" parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="android:textColor">@drawable/text_color_selector_night</item>
+        <item name="android:background">@drawable/range_radio_btn_idk</item>
+    </style>
+
+    <style name="historyBackgroundColor">
+        <item name="android:backgroundTint">@color/gray_dark</item>
+    </style>
+
+    <style name="bottomSheetBackground" >
+        <item name="android:backgroundTint">@color/gray_dark</item>
+    </style>
+
+    <style name="transactionItemBackground">
+        <item name="cardBackgroundColor">@color/gray2</item>
+        <item name="android:background">@color/gray2</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@color/gray_dark</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+
+
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryContainer">@color/colorPrimaryContainerDark</item>
+        <item name="colorSecondary">@color/colorSecondaryDark</item>
+        <item name="colorSecondaryContainer">@color/colorSecondaryContainerDark</item>
+    </style>
+
+    <style name="dailyTxtColor">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="textGrayColor" >
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="cardViewBackgroundColor">
+        <item name="android:backgroundTint">@color/gray_dark</item>
+    </style>
+
+    <style name="lineViewColor">
+        <item name="android:background">@color/gray2</item>
+    </style>
+
+    <style name="NormalTextColor">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="iconTint">
+        <item name="tint">@color/white</item>
+    </style>
+
+</resources>
